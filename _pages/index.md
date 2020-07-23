@@ -59,7 +59,7 @@ feature_row5:
 Probabilistic programming is the intersection of software engineering and probabilistic modeling, inference, and learning. Probabilistic programming systems are tools that make it easier to implement probabilistic inference and learning algorithms; analogously to how deep learning frameworks make it easier to implement and train and deploy neural networks. 
 
 <br>
-# Why Gen?
+# Why Gen
 {: style="text-align: center"}
 
 {% include feature_row id="feature_row2" type="left" %}
@@ -71,10 +71,44 @@ Probabilistic programming is the intersection of software engineering and probab
 {% include feature_row id="feature_row5" type="right" %}
 
 <br>
-# Who is using Gen?
+# Installing Gen
 {: style="text-align: center"}
 <br>
+First, [download Julia](https://julialang.org/downloads/).
+The, install the Gen package with the Julia package manager:
 
+From the Julia REPL, type `]` to enter the Pkg REPL mode and then run:
+```
+pkg> add Gen
+```
+
+<br>
+# Gen is an open-source project
+If you use Gen in your research, please cite our [paper](https://dl.acm.org/doi/10.1145/3314221.3314642):
+```
+@inproceedings{Cusumano-Towner:2019:GGP:3314221.3314642,
+ author = {Cusumano-Towner, Marco F. and Saad, Feras A. and Lew, Alexander K. and Mansinghka, Vikash K.},
+ title = {Gen: A General-purpose Probabilistic Programming System with Programmable Inference},
+ booktitle = {Proceedings of the 40th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI 2019},
+ year = {2019},
+ isbn = {978-1-4503-6712-7},
+ location = {Phoenix, AZ, USA},
+ pages = {221--236},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/3314221.3314642},
+ doi = {10.1145/3314221.3314642},
+ acmid = {3314642},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Markov chain Monte Carlo, Probabilistic programming, sequential Monte Carlo, variational inference},
+} 
+```
+
+
+<br>
+# Institutions using Gen
+{: style="text-align: center"}
 <div class="logo-table">
 <table>
 <tr>
@@ -89,3 +123,5 @@ Probabilistic programming is the intersection of software engineering and probab
 </tr>
 </table>
 </div>
+
+
