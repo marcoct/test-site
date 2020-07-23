@@ -81,7 +81,7 @@ Gen is designed for extensibility and to support incremental performance optimiz
 {: style="text-align: center"}
 <br>
 First, [download Julia](https://julialang.org/downloads/).
-The, install the Gen package with the Julia package manager:
+Then, install the Gen package with the Julia package manager:
 
 From the Julia REPL, type `]` to enter the Pkg REPL mode and then run:
 ```
@@ -136,4 +136,4 @@ Gen: A General-Purpose Probabilistic Programming System with Programmable Infere
 # The Gen team
 {: style="text-align: center"}
 Gen was originally created by [Marco Cusumano-Towner](http://web.mit.edu/marcoct/www/) at the [MIT Probabilistic Computing Project](http://probcomp.csail.mit.edu/), which is led by [Vikash Mansinghka](http://probcomp.csail.mit.edu/principal-investigator/).
-Gen continues to evolve with the help of a group of core contributors including ..., in concert with a community of open-source contributors.
+Gen continues to evolve, guided by a team of core contributors including ..., in concert with a community of open-source contributors.
