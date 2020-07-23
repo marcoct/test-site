@@ -1,9 +1,7 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+  - title: "Documentation"
+    url: https://www.gen.dev/dev/
+  - title: "Source"
+    url: https://github.com/probcomp/Gen.jl
+  - title: "Ecosystem"
+    url: /ecosystem/

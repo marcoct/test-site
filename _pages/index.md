@@ -83,8 +83,10 @@ pkg> add Gen
 ```
 
 <br>
-# Gen is an open-source project
-If you use Gen in your research, please cite our [paper](https://dl.acm.org/doi/10.1145/3314221.3314642):
+# Gen is an open-source academic project
+If you use Gen in your research, please cite our [paper]((https://dl.acm.org/doi/10.1145/3314221.3314642):
+
+Gen: A General-Purpose Probabilistic Programming System with Programmable Inference. Cusumano-Towner, M. F.; Saad, F. A.; Lew, A.; and Mansinghka, V. K. In Proceedings of the 40th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI ‘19).
 ```
 @inproceedings{Cusumano-Towner:2019:GGP:3314221.3314642,
  author = {Cusumano-Towner, Marco F. and Saad, Feras A. and Lew, Alexander K. and Mansinghka, Vikash K.},
@@ -124,4 +126,13 @@ If you use Gen in your research, please cite our [paper](https://dl.acm.org/doi/
 </table>
 </div>
 
+<br>
+# Research that used Gen
+{: style="text-align: center"}
 
+
+<br>
+# The Gen team
+{: style="text-align: center"}
+Gen was originally created by [Marco Cusumano-Towner](http://web.mit.edu/marcoct/www/) at the [MIT Probabilistic Computing Project](http://probcomp.csail.mit.edu/), which is led by [Vikash Mansinghka](http://probcomp.csail.mit.edu/principal-investigator/).
+Gen continues to evolve with the help of a group of core contributors including ..., in concert with a community of open-source contributors.
