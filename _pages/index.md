@@ -131,6 +131,9 @@ Gen: A General-Purpose Probabilistic Programming System with Programmable Infere
 <td> <img src="assets/images/intel-logo.png" width="150" /> </td>
 <td> <img src="assets/images/ibm-logo.png" width="150" /> </td>
 </tr>
+<tr>
+<td> <img src="assets/images/umass-amherst-logo.png" width="200" /> </td>
+</tr>
 </table>
 </div>
 
