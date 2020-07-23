@@ -9,11 +9,11 @@ header:
   overlay_image: assets/images/streaks-1595480979289-8037.jpg
   overlay_image: assets/images/traces.jpg
   overlay_image: assets/images/rostyslav-savchyn-9XtjVafxMUg-unsplash.jpg
-  overlay_image: assets/images/cropped_waves.jpg
   overlay_image: assets/images/streaks-1595480979289-8037.jpg
   overlay_image: assets/images/jack-b-Pt1ivS0rUME-unsplash.jpg
   overlay_image: assets/images/pawel-czerwinski-YuJm-d7k2Jg-unsplash.jpg
   overlay_image: assets/images/ryan-stone-OlxJVn9fxz4-unsplash.jpg
+  overlay_image: assets/images/cropped_waves.jpg
 excerpt: "Gen is a general-purpose probabilistic programming system, embedded in Julia."
 
 intro: 
@@ -57,11 +57,22 @@ feature_row5:
 # What is probabilistic programming?
 {: style="text-align: center"}
 
-Probabilistic programming is the intersection of software engineering and probabilistic modeling, inference, and learning. Probabilistic programming systems are tools that make it easier to implement probabilistic inference and learning algorithms; analogously to how deep learning frameworks make it easier to implement and train and deploy neural networks. 
+Probabilistic programming is the intersection of software engineering and probabilistic modeling, inference, and learning. Probabilistic programming systems are tools that make it easier to implement probabilistic inference and learning algorithms, just like deep learning frameworks make it easier to implement and train and deploy neural networks. 
 
 <br>
 # Why Gen?
 {: style="text-align: center"}
+
+### Implement sophisticated Bayesian inference algorithms without the math
+Gen’s inference library gives you building blocks for creating custom inference algorithms tailored to your model, while automating the tricky math and the low-level implementation. Create hybrid algorithms that combine neural network proposals trained with variational inference, sequential Monte Carlo samplers, and any algorithm in the [involutive MCMC framework](link here).
+
+### Flexibly navigate performance trade-offs
+But it also lets you migrate parts of your model or inference algorithm to specialized modeling DSLs for which it can generate especially fast code.
+### Flexibly navigate performance trade-offs
+Gen features an easy-to-use modeling language for writing down probabilistic models, variational families, and proposal distributions using ordinary Julia code. 
+But it can be also be extended to support incremental performance optimization as the inference application is scaled from a small-scale proof of concept to a prototype.
+You can migrate parts of your model to specalized modeling DSLs that generate fast code, or to hand-optimized modeling components.
+
 
 ### Gen supports custom hybrid inference algorithms
 Neural network inference is fast, but can be inaccurate on out-of-distribution data, and requires expensive training. Model-based inference is more computationally expensive, but does not require retraining, and can be more accurate. Gen supports custom hybrid inference algorithms that benefit from the strengths of both approaches.
@@ -71,9 +82,6 @@ Instead of an inference engine, Gen provides a flexible "Trace" data type for im
 
 ### Gen supports inference in open-universe models
 Generative and inference models in Gen can have stochastic control flow (dimension). Support for custom reversible jump MCMC allows for much more efficient inference over model structure.
-
-### Gen is extensible
-Gen is designed for extensibility and to support incremental performance optimization as the inference application is scaled from a small-scale proof of concept to a prototype. Users can optimize bottlenecks in their model by hand-optimized code that inter-operates with Gens inference library code.
 
 
 <br>

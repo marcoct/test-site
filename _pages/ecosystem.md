@@ -19,6 +19,9 @@ Gen modeling language that wraps PyTorch computation graphs.
 ### [GenTF](https://github.com/probcomp/GenTF)
 Gen modeling language that wraps TensorFlow computation graphs.
 
+### [GenFluxOptimizers](https://github.com/probcomp/GenFluxOptimizers.jl)
+Enables the use of any of [Flux](https://github.com/FluxML/Flux.jl)'s optimizers for parameter learning in generative functions from Gen's static or dynamic modeling languages.
+
 ### [GenParticleFilters](https://github.com/probcomp/GenParticleFilters.jl)
 Building blocks for basic and advanced particle filtering.
 
