@@ -5,7 +5,7 @@ layout: splash
 
 header:
   overlay_color: "#000"
-  overlay_filter: "0.2"
+  overlay_filter: "0.5"
   overlay_image: assets/images/streaks-1595480979289-8037.jpg
   overlay_image: assets/images/traces.jpg
   overlay_image: assets/images/rostyslav-savchyn-9XtjVafxMUg-unsplash.jpg
@@ -90,7 +90,7 @@ pkg> add Gen
 
 <br>
 # Gen is an open-source academic project
-If you use Gen in your research, please cite our [paper]((https://dl.acm.org/doi/10.1145/3314221.3314642):
+If you use Gen in your research, please cite our [paper](https://dl.acm.org/doi/10.1145/3314221.3314642):
 
 Gen: A General-Purpose Probabilistic Programming System with Programmable Inference. Cusumano-Towner, M. F.; Saad, F. A.; Lew, A.; and Mansinghka, V. K. In Proceedings of the 40th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI ‘19).
 ```
