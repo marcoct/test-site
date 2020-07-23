@@ -37,7 +37,7 @@ feature_row3:
   - image_path: /assets/images/trace.png
     alt: "placeholder image 2"
     title: "Gen users implement custom algorithms without extending the language implementation"
-    excerpt: 'Instead of an inference engine, Gen provides a flexible "Trace" data type for implementing an open-ended set of inference and learning algorithms without touching the modeling-language implementation. Gen trace operations includes automatic differentiation (AD), but goes beyond AD and includes other operations needed for model-based reasoning.'
+    excerpt: 'Instead of an inference engine, Gen offers a flexible "Trace" data type for implementing an open-ended set of inference and learning algorithms without touching the modeling-language implementation. Gen trace operations includes automatic differentiation (AD), but goes beyond AD and includes other operations needed for model-based reasoning.'
 
 feature_row4:
   - image_path: /assets/images/open-universe.png
@@ -54,34 +54,28 @@ feature_row5:
 ---
 
 <br>
-# What is probabilistic programming?
+# Why Gen
 {: style="text-align: center"}
 
-Probabilistic programming is the intersection of software engineering and probabilistic modeling, inference, and learning. Probabilistic programming systems are tools that make it easier to implement probabilistic inference and learning algorithms, just like deep learning frameworks make it easier to implement and train and deploy neural networks. 
-
-<br>
-# Why Gen?
-{: style="text-align: center"}
-
-### Implement sophisticated Bayesian inference algorithms without the math
-Gen’s inference library gives you building blocks for creating custom inference algorithms tailored to your model, while automating the tricky math and the low-level implementation. Create hybrid algorithms that combine neural network proposals trained with variational inference, sequential Monte Carlo samplers, and any algorithm in the [involutive MCMC framework](link here).
+### Implement sophisticated probabilistic inference algorithms without the math
+Gen's inference library gives you building blocks for writing efficient probabilistic inference algorithms that are tailored to your model, while automating the tricky math and the low-level implementation details.
+Gen helps you write hybrid algorithms that combine neural networks, variational inference, sequential Monte Carlo samplers, and Markov chain Monte Carlo.
 
 ### Flexibly navigate performance trade-offs
-But it also lets you migrate parts of your model or inference algorithm to specialized modeling DSLs for which it can generate especially fast code.
-### Flexibly navigate performance trade-offs
-Gen features an easy-to-use modeling language for writing down probabilistic models, variational families, and proposal distributions using ordinary Julia code. 
-But it can be also be extended to support incremental performance optimization as the inference application is scaled from a small-scale proof of concept to a prototype.
-You can migrate parts of your model to specalized modeling DSLs that generate fast code, or to hand-optimized modeling components.
-
+Gen features an easy-to-use modeling language for writing down generative models, inference models, variational families, and proposal distributions using ordinary Julia code. 
+But it also lets you migrate parts of your model or inference algorithm to specialized modeling languages for which it can generate especially fast code.
+You can also hand-code parts of your models that demand better performance.
 
 ### Gen supports custom hybrid inference algorithms
 Neural network inference is fast, but can be inaccurate on out-of-distribution data, and requires expensive training. Model-based inference is more computationally expensive, but does not require retraining, and can be more accurate. Gen supports custom hybrid inference algorithms that benefit from the strengths of both approaches.
 
-### Gen users implement custom algorithms without extending the language implementation
-Instead of an inference engine, Gen provides a flexible "Trace" data type for implementing an open-ended set of inference and learning algorithms without touching the modeling-language implementation. Gen trace operations includes automatic differentiation (AD), but goes beyond AD and includes other operations needed for model-based reasoning.
+### Implement custom inference algorithms without modifying the compiler
+Instead of an *inference engine* that tightly couples inference algorithms with language compiler details, Gen gives you a *flexible API* for implementing an open-ended set of inference and learning algorithms.
+This API includes automatic differentiation (AD), but goes far beyond AD and includes many other operations that are needed for model-based inference algorithms.
 
-### Gen supports inference in open-universe models
-Generative and inference models in Gen can have stochastic control flow (dimension). Support for custom reversible jump MCMC allows for much more efficient inference over model structure.
+### Efficient inference in models with stochastic structure
+Generative models and inference models in Gen can have dynamic computation graphs.
+Gen's unique support for custom reversible jump and [involutive MCMC](https://arxiv.org/abs/2007.09871) algorithms allows for more efficient inference in generative models with stochastic structure.
 
 
 <br>
@@ -143,5 +137,5 @@ Gen: A General-Purpose Probabilistic Programming System with Programmable Infere
 <br>
 # The Gen team
 {: style="text-align: center"}
-Gen was originally created by [Marco Cusumano-Towner](http://web.mit.edu/marcoct/www/) at the [MIT Probabilistic Computing Project](http://probcomp.csail.mit.edu/), which is led by [Vikash Mansinghka](http://probcomp.csail.mit.edu/principal-investigator/).
-Gen continues to evolve, guided by a team of core contributors including ..., in concert with a community of open-source contributors.
+Gen was originally created by [Marco Cusumano-Towner](https://www.mct.dev) at the [MIT Probabilistic Computing Project](http://probcomp.csail.mit.edu/), which is led by [Vikash Mansinghka](http://probcomp.csail.mit.edu/principal-investigator/).
+Gen continues to actively evolve with the help of a core team that includes Ben Zinberg, [Alex Lew](http://alexlew.net/), [Tan Zhi-Xuan](https://github.com/ztangent/), and [George Matheos](https://www.linkedin.com/in/george-matheos-429982160/); and a number of open-source [contributors](https://github.com/probcomp/Gen.jl/graphs/contributors).
