@@ -5,13 +5,16 @@ layout: splash
 
 header:
   overlay_color: "#000"
-  overlay_filter: "0.4"
-  overlay_image: assets/images/patrick-boucher-70pm04yEWTA-unsplash.jpg
+  overlay_filter: "0.2"
+  overlay_image: assets/images/streaks-1595480979289-8037.jpg
+  overlay_image: assets/images/traces.jpg
+  overlay_image: assets/images/rostyslav-savchyn-9XtjVafxMUg-unsplash.jpg
+  overlay_image: assets/images/cropped_waves.jpg
+  overlay_image: assets/images/streaks-1595480979289-8037.jpg
+  overlay_image: assets/images/jack-b-Pt1ivS0rUME-unsplash.jpg
   overlay_image: assets/images/pawel-czerwinski-YuJm-d7k2Jg-unsplash.jpg
-  actions:
-    - label: "Download"
-      url: "https://github.com/mmistakes/minimal-mistakes/"
-excerpt: "Gen.jl is a general-purpose probabilistic programming system, embedded in Julia."
+  overlay_image: assets/images/ryan-stone-OlxJVn9fxz4-unsplash.jpg
+excerpt: "Gen is a general-purpose probabilistic programming system, embedded in Julia."
 
 intro: 
   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
@@ -27,10 +30,8 @@ logo_row1:
     alt: "placeholder image 2"
 
 feature_row2:
-  - image_path: /assets/images/hybrid.png
-    alt: "placeholder image 2"
-    title: "Gen supports custom hybrid inference algorithms"
-    excerpt: 'Neural network inference is fast, but can be inaccurate on out-of-distribution data, and requires expensive training. Model-based inference is more computationally expensive, but does not require retraining, and can be more accurate. Gen supports custom hybrid inference algorithms that benefit from the strengths of both approaches.'
+    - title: "Gen supports custom hybrid inference algorithms"
+    - excerpt: 'Neural network inference is fast, but can be inaccurate on out-of-distribution data, and requires expensive training. Model-based inference is more computationally expensive, but does not require retraining, and can be more accurate. Gen supports custom hybrid inference algorithms that benefit from the strengths of both approaches.'
 
 feature_row3:
   - image_path: /assets/images/trace.png
@@ -59,16 +60,21 @@ feature_row5:
 Probabilistic programming is the intersection of software engineering and probabilistic modeling, inference, and learning. Probabilistic programming systems are tools that make it easier to implement probabilistic inference and learning algorithms; analogously to how deep learning frameworks make it easier to implement and train and deploy neural networks. 
 
 <br>
-# Why Gen
+# Why Gen?
 {: style="text-align: center"}
 
-{% include feature_row id="feature_row2" type="left" %}
+### Gen supports custom hybrid inference algorithms
+Neural network inference is fast, but can be inaccurate on out-of-distribution data, and requires expensive training. Model-based inference is more computationally expensive, but does not require retraining, and can be more accurate. Gen supports custom hybrid inference algorithms that benefit from the strengths of both approaches.
 
-{% include feature_row id="feature_row3" type="right" %}
+### Gen users implement custom algorithms without extending the language implementation
+Instead of an inference engine, Gen provides a flexible "Trace" data type for implementing an open-ended set of inference and learning algorithms without touching the modeling-language implementation. Gen trace operations includes automatic differentiation (AD), but goes beyond AD and includes other operations needed for model-based reasoning.
 
-{% include feature_row id="feature_row4" type="left" %}
+### Gen supports inference in open-universe models
+Generative and inference models in Gen can have stochastic control flow (dimension). Support for custom reversible jump MCMC allows for much more efficient inference over model structure.
 
-{% include feature_row id="feature_row5" type="right" %}
+### Gen is extensible
+Gen is designed for extensibility and to support incremental performance optimization as the inference application is scaled from a small-scale proof of concept to a prototype. Users can optimize bottlenecks in their model by hand-optimized code that inter-operates with Gens inference library code.
+
 
 <br>
 # Installing Gen
@@ -125,11 +131,6 @@ Gen: A General-Purpose Probabilistic Programming System with Programmable Infere
 </tr>
 </table>
 </div>
-
-<br>
-# Research that used Gen
-{: style="text-align: center"}
-
 
 <br>
 # The Gen team
